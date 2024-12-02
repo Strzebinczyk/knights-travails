@@ -36,7 +36,6 @@ class Board
   end
 
   def move_knight(row, column)
-    possible_moves = knight.find_possible_moves
     if [row, column] in possible_moves
       @positions[@knight.row][knight.column] = nil
       @knight.row = row
@@ -46,8 +45,3 @@ class Board
     end
   end
 end
-
-board = Board.new
-board.display_board
-board.add_knight(0, 3)
-board.display_board

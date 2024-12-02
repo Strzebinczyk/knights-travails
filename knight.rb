@@ -3,7 +3,7 @@ class Knight
   def initialize(row, column)
     @row = row
     @column = column
-    @move_pattern = [[-1, 2], [-1, -2], [-2, 1], [-2, -1], [1, 2], [1, -2], [2, 1], [2, -1]]
+    @move_pattern = [[-2, -1], [-2, 1], [2, -1], [2, 1], [-1, -2], [-1, 2], [1, -2], [1, 2]]
     @possible_moves = find_possible_moves
   end
 
